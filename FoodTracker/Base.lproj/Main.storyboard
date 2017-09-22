@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PsW-yd-AeM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PsW-yd-AeM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="QCd-fs-YKe" id="EtN-an-btU">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="50i-AX-JHA">
@@ -81,16 +81,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ZlU-1l-gXS">
-                                <rect key="frame" x="16" y="84" width="343" height="433"/>
+                                <rect key="frame" x="16" y="84" width="343" height="439"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter meal name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H5a-jP-MWV">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="36"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
                                     </textField>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="KRh-A0-LCS">
-                                        <rect key="frame" x="0.0" y="38" width="343" height="343"/>
+                                        <rect key="frame" x="0.0" y="44" width="343" height="343"/>
                                         <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="KRh-A0-LCS" secondAttribute="height" multiplier="1:1" id="mIo-Ov-ylF"/>
@@ -100,7 +100,7 @@
                                         </connections>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2fq-8P-wv1" customClass="RatingControl" customModule="FoodTracker" customModuleProvider="target">
-                                        <rect key="frame" x="45.5" y="389" width="252" height="44"/>
+                                        <rect key="frame" x="45.5" y="395" width="252" height="44"/>
                                     </stackView>
                                 </subviews>
                                 <constraints>
@@ -111,16 +111,36 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="ZlU-1l-gXS" secondAttribute="trailing" id="3LV-sc-JZZ"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="529-7A-BtX"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7f9-Fk-s7w"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="At7-HJ-H1g"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="BE5-bL-6WX"/>
                             <constraint firstItem="ZlU-1l-gXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Drh-9D-Ukh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZlU-1l-gXS" secondAttribute="bottom" constant="144" id="Hnx-y4-hHZ"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="JRY-A9-pYZ"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="Jzo-0q-uiG"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="KD9-dF-uio"/>
                             <constraint firstItem="ZlU-1l-gXS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="Ste-6F-DZy"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="84" id="cLP-Sc-AS6"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cxQ-Fa-uaE"/>
+                            <constraint firstAttribute="bottom" secondItem="ZlU-1l-gXS" secondAttribute="bottom" constant="144" id="ezx-9S-3XX"/>
+                            <constraint firstItem="ZlU-1l-gXS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="pvd-jh-3bK"/>
+                            <constraint firstAttribute="trailing" secondItem="ZlU-1l-gXS" secondAttribute="trailing" constant="16" id="wEU-E6-a9q"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="00F-bF-oB6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="zSo-pc-tfX"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="A3k-T7-3Vn"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qzt-jh-cuc">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="SMv-GI-cRY"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="A3k-T7-3Vn">
+                            <connections>
+                                <segue destination="Xxa-6J-XcS" kind="unwind" unwindAction="unwindToMealListWithSender:" id="49P-7Q-z4f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="cancelButton" destination="zSo-pc-tfX" id="IWq-A1-d0F"/>
                         <outlet property="nameTextField" destination="H5a-jP-MWV" id="eQe-Hx-wP9"/>
                         <outlet property="photoImageView" destination="KRh-A0-LCS" id="2GH-r9-IxE"/>
                         <outlet property="ratingControl" destination="2fq-8P-wv1" id="Knv-6z-GyD"/>
@@ -128,6 +148,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="Xxa-6J-XcS" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="5x1-Hd-d9h">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="bzC-G3-eG8"/>
